@@ -1,26 +1,60 @@
 .caixa-header {
   background: url(/img/destaque.jpeg) no-repeat;
-  background-size: 100%; /* cover */
+  background-size: cover;
   margin: 0 auto;
   text-align: center;
 }
 
 .sobre,
 .palestrantes {
-  margin: 1em auto;
+  margin: 2em auto;
   display: inline-block;
-  background: rgba(255, 255, 255, 0.404);
+  background: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  padding: 10px;
+  padding: 15px;
 }
 
 .sobre:hover,
 .palestrantes:hover {
   background-color: #48a3a6;
-  transition: 1s;
+  transition: background-color 0.5s;
 }
 
-.sobre a,
-.palestrantes a {
+.caixa-header a {
   text-decoration: none;
+  color: white;
+}
+
+.caixa-titulo {
+  padding: 0 0 2.75em 0;
+}
+
+.titulo-evento {
+  color: white;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  font-size: 3em;
+}
+
+.subtitulo-evento {
+  margin-top: 0.5em;
+  color: greenyellow;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  font-size: 2.6em;
+}
+
+.botao-inscricao {
+  display: inline-block;
+  margin-top: 3em;
+  background-color: #48a3a6;
+  border-radius: 5px;
+  border: none;
+  padding: 25px;
+  font-size: 1.12em;
+}
+
+@media (min-width: 600px) {
+
+  .caixa-titulo {
+    font-size: 1.75em;
+  }
 }
