@@ -7,18 +7,40 @@
 
 .titulo-palestrantes {
   font-size: 2.5em;
-  margin: 0.5em 0 0.5em;
+  padding-top: 1em;
+  margin-bottom: 0.5em;
 }
 
 .subtitulo-palestrantes {
   font-size: 1.8em;
-  margin: 0 0 0.5em;
+  margin-bottom: 1em;
+}
+
+.palestrante {
+  vertical-align: top;
+  background: white;
+  border-radius: 10px;
+  display: inline-block;
+  width: 300px;
+  color: black;
+  margin: 0 1em 1em 0;
+}
+
+.img-palestrante img {
+  padding: 10px;
+  border-radius: 150px;
 }
 
 .nome-palestrante {
   font-size: 1.5em;
 }
 
-.img-palestrante img {
-  border-radius: 150px;
+.bio-palestrante {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.conteudo-palestra {
+  margin: 10px 0 20px;
+  font-size: 1.2em;
 }
