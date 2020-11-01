@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/conteudo.css" />
     <link rel="stylesheet" href="./css/palestrantes.css" />
+    <link rel="stylesheet" href="./css/formulario.css" />
 
     <title>AluraConf</title>
 </head>
@@ -16,9 +17,9 @@
     <header class="caixa-header">
         <nav>
             <ul>
-                <li class="sobre"><a href="#">SOBRE</a></li>
+                <li class="sobre"><a href="#painel-sobre">SOBRE</a></li>
 
-                <li class="palestrantes-menu"><a href="#">PALESTRANTES</a></li>
+                <li class="palestrantes-menu"><a href="#painel-palestrantes">PALESTRANTES</a></li>
             </ul>
         </nav>
 
@@ -32,13 +33,13 @@
             </section>
 
             <section class="botao-inscricao">
-                <a href="#">INSCREVA-SE</a>
+                <a href="#painel-inscricao">INSCREVA-SE</a>
             </section>
         </div>
     </header>
 
     <main>
-        <div class="caixa-main">
+        <div class="caixa-main" id="painel-sobre">
             <section class="titulo-main">
                 <h2>Muito conteúdo: do frontend ao backend</h2>
             </section>
@@ -60,7 +61,7 @@
             </section>
         </div>
 
-        <div class="caixa-palestrantes">
+        <div class="caixa-palestrantes" id="painel-palestrantes">
             <section class="titulo-palestrantes">
                 <h2>PALESTRANTES</h2>
             </section>
@@ -107,7 +108,29 @@
                 </li>
             </ul>
         </div>
+
+        <div class="caixa-formulario" id="painel-inscricao">
+            <section class="titulo-form">
+                <h2>SEUS DADOS</h2>
+            </section>
+
+            <form action="/#">
+                <div class="nome-form">
+                    <label for="nome">Nome</label><br>
+                    <input type="text" id="nome">
+                </div>
+                <div class="email-form">
+                    <label for="email">E-mail</label><br>
+                    <input type="email" id="email">
+                </div>
+                <div class="botao-form">
+                    <button type="submit">REALIZAR INSCRIÇÃO</button>
+                </div>
+            </form>
+        </div>
     </main>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
