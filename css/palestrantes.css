@@ -1,0 +1,24 @@
+.caixa-palestrantes {
+  text-align: center;
+  margin: 0 auto;
+  background: coral;
+  color: white;
+}
+
+.titulo-palestrantes {
+  font-size: 2.5em;
+  margin: 0.5em 0 0.5em;
+}
+
+.subtitulo-palestrantes {
+  font-size: 1.8em;
+  margin: 0 0 0.5em;
+}
+
+.nome-palestrante {
+  font-size: 1.5em;
+}
+
+.img-palestrante img {
+  border-radius: 150px;
+}
